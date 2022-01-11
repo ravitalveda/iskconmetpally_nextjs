@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import Image from "next/image";
-import Link from "next/link";
+import styled from 'styled-components';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import BgImage from "../../../public/assets/shared/bg-beta.jpg";
+import BgImage from '../../../public/images/shared/bg-beta.jpg';
 
 export default function BetaInvite() {
   return (
@@ -25,7 +25,7 @@ export default function BetaInvite() {
         <Link href='/' passHref>
           <CustomLink>
             get an invite
-            <img src='/assets/shared/arrow-white.svg' alt='arrow' />
+            <img src='/images/shared/arrow-white.svg' alt='arrow' />
           </CustomLink>
         </Link>
       </ContentWrapper>
@@ -34,7 +34,7 @@ export default function BetaInvite() {
 }
 
 const Container = styled.section`
-  color: ${props => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.white};
   padding: 0 33px;
   position: relative;
   height: 28.8rem;

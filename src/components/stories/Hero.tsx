@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import Link from "next/link";
-import Image from "next/image";
-import HeroImage from "../../../public/assets/stories/moon-of-appalacia.jpg";
+import styled from 'styled-components';
+import Link from 'next/link';
+import Image from 'next/image';
+import HeroImage from '../../../public/images/stories/moon-of-appalacia.jpg';
 
 export default function Hero() {
   return (
@@ -16,7 +16,7 @@ export default function Hero() {
           quality={100}
         />
       </MobileImageDesktop>
-      <div style={{ position: "relative" }}>
+      <div style={{ position: 'relative' }}>
         <HeroImageDesktop>
           <Image
             src={HeroImage}
@@ -43,7 +43,7 @@ export default function Hero() {
           <Link href='/stories' passHref>
             <CustomLink>
               Read the story
-              <img src='/assets/shared/arrow-white.svg' alt='arrow' />
+              <img src='/images/shared/arrow-white.svg' alt='arrow' />
             </CustomLink>
           </Link>
         </TextArea>
@@ -79,7 +79,7 @@ const TextArea = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: ${props => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.white};
   position: relative;
   max-width: 1600px;
   margin: auto;

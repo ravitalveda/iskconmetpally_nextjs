@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import Image from "next/image";
-import Link from "next/link";
+import styled from 'styled-components';
+import Image from 'next/image';
+import Link from 'next/link';
 
 interface StoryCardProps {
   image: {
@@ -28,12 +28,12 @@ export default function StoryCard({ image, title, author }: StoryCardProps) {
           />
           <Title>{title}</Title>
           <Author className='author'>by {author}</Author>
-          <Divider />
+          {/* <Divider />
           <CustomLink>
             read story
-            <img src='/assets/shared/arrow-white.svg' alt='read' />
+            <img src='/images/shared/arrow-white.svg' alt='read' />
           </CustomLink>
-          <CustomBorder className='customBorder_xtabu23' />
+          <CustomBorder className='customBorder_xtabu23' /> */}
         </Content>
       </Link>
     </li>
@@ -62,7 +62,7 @@ const Content = styled.a`
   flex-direction: column;
   justify-content: flex-end;
   padding: 4rem 33px;
-  color: ${props => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.white};
   text-decoration: none;
   transition: transform 0.3s ease-out;
 

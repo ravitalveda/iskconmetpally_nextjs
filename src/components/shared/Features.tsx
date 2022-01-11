@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 interface FeaturesProps {
   complete: boolean;
@@ -7,67 +7,105 @@ interface FeaturesProps {
 export default function Features({ complete }: FeaturesProps) {
   const completeList = [
     {
-      image: "/assets/features/responsive.svg",
-      title: "100% Responsive",
+      image: '/images/features/responsive.svg',
+      title: 'Nandotsav',
       description:
-        "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.",
+        'Nandotsav is a festival celebrated the day after the festival Janmashtami, which celebrates the Lord Krishnas birth. It is believed that all the villagers of Braj visited Nand Baba"s house to see little Krishna and congratulate Mata Yashoda. Nand Baba distributed ornaments, clothes, cattle and various other valuables among saints and sages. All saints and sages bestowed blessings on Lord Krishna in return.',
     },
     {
-      image: "/assets/features/no-limit.svg",
-      title: "No Photo Upload Limit",
+      image: '/images/features/no-limit.svg',
+      title: 'No Photo Upload Limit',
       description:
-        "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.",
+        'Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.',
     },
     {
-      image: "/assets/features/embed.svg",
-      title: "Available to Embed",
+      image: '/images/features/embed.svg',
+      title: 'Available to Embed',
       description:
-        "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more. ",
+        'Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more. ',
     },
     {
-      image: "/assets/features/custom-domain.svg",
-      title: "Custom Domain",
+      image: '/images/features/custom-domain.svg',
+      title: 'Custom Domain',
       description:
-        "With Photosnap subscriptions you can host your stories on your own domain. You can also remove our branding!",
+        'With Sri Sri Radha Govardhandhari Mandir subscriptions you can host your stories on your own domain. You can also remove our branding!',
     },
     {
-      image: "/assets/features/boost-exposure.svg",
-      title: "Boost Your Exposure",
+      image: '/images/features/boost-exposure.svg',
+      title: 'Boost Your Exposure',
       description:
-        "Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list.",
+        'Users that viewed your story or gallery can easily get notifed of new and featured stories with our built in mailing list.',
     },
     {
-      image: "/assets/features/drag-drop.svg",
-      title: "Drag & Drop Image",
+      image: '/images/features/drag-drop.svg',
+      title: 'Drag & Drop Image',
       description:
-        "Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.",
+        'Easily drag and drop your image and get beautiful shots everytime. No over the top tooling to add friction to creating stories.',
     },
   ];
-  const partialList = [
+
+  const festivalsList = [
     {
-      image: "/assets/features/responsive.svg",
-      title: "100% Responsive",
+      image: 'images/smallarticle/ratha1.webp',
+      title: 'Sri Jagannātha Ratha Yātra',
       description:
-        "No matter which the device you’re on, our site is fully responsive and stories look beautiful on any screen.",
+        'Ratha Yatra or Chariot festival is any public procession in a chariot. The annual Rathayatra, that involve a public procession with a chariot with deities Jagannath (Vishnu avatar), Balabhadra (his brother), Subhadra (his sister) and Sudarshana Chakra (his weapon) on a ratha, a wooden doula-shaped chariot. It attracts many devotees who join the procession each year in the town of Metpally.',
     },
     {
-      image: "/assets/features/no-limit.svg",
-      title: "No Photo Upload Limit",
+      image: 'images/smallarticle/pparticle.webp',
+      title: 'Srila Prabhupāda Vyāsapūja',
       description:
-        "Our tool has no limits on uploads or bandwidth. Freely upload in bulk and share all of your stories in one go.",
+        'His Divine Grace A.C. Bhakti Vedanta Swami Prabhupada founder of ISKCON propagated Krsna Consiousness all over the world. On occasion of his divine appearance on 6th August, we are celebrating the festival at ISKCON Metpally Dham.',
     },
     {
-      image: "/assets/features/embed.svg",
-      title: "Available to Embed",
+      image: 'images/smallarticle/10.webp',
+      title: 'Nandotsav',
       description:
-        "Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, Google Maps, and more. ",
+        'Nandotsav is a festival celebrated the day after the festival Janmashtami, which celebrates the Lord Krishnas birth. It is believed that all the villagers of Braj visited Nand Baba"s house to see little Krishna and congratulate Mata Yashoda. Nand Baba distributed ornaments, clothes, cattle and various other valuables among saints and sages. All saints and sages bestowed blessings on Lord Krishna in return.',
+    },
+    {
+      image: 'images/smallarticle/bala2.webp',
+      title: 'Balaram Jayanti',
+      description:
+        'Appearance day of Sri Balaram, Lord Balaram is the elder brother of Krishna, represents Guru Tatva and gives strength to perform Bhakti.',
+    },
+    {
+      image: 'images/smallarticle/narasimha.webp',
+      title: 'Sri Narasimha Chaturdashi',
+      description:
+        'It is the appearance day of Sri Narasimha Dev. He is protector of devotees and removes fear from their hearts.',
+    },
+
+    {
+      image: 'images/brahmotsavam/5.jpg',
+      title: 'Brahmotsavam',
+      description:
+        "On this auspicious day of Akshaya Tritiya, Sri Sri Radha Giridhari rides on palanquin. Also, this is starting day of Chandan Yatra where Lord's whole body is smeared with sandalwood paste for 21 days which provides the Lord relief from the scorching heat of summer.",
+    },
+    {
+      image: 'images/smallarticle/gaurpurnima.webp',
+      title: 'Gaur Purnima',
+      description:
+        'Is the appearance day of Sri Chaitanya Mahaprabhu, the most merciful form of the lord. He came to inaugurate Harinam Sankirtan in this age of Kali.',
+    },
+    {
+      image: 'images/smallarticle/nityananda.webp',
+      title: 'Nityananda Trayodashi',
+      description:
+        'It is the appearance day of Lord Nityananda, he is an intimate associate of Sri Chaitanya Mahaprabhu in spreading Krishna Consciousness in this world.',
+    },
+    {
+      image: 'images/smallarticle/gitajayanti.webp',
+      title: 'Gita Jayanti',
+      description:
+        'The Bhagavad-Gita, The Lord’s Song, is understood as a conversation between Krishna and Arjuna but meant for the whole world’s benefit. On this day, devotees gather to glorify the sacred conversation.',
     },
   ];
-  const list = complete ? completeList : partialList;
+  const list = complete ? completeList : festivalsList;
 
   return (
-    <Container className={`${complete && "complete"}`}>
-      {list.map(feature => (
+    <Container className={`${complete && 'complete'}`}>
+      {list.map((feature) => (
         <Feature key={feature.title}>
           <Illustration src={feature.image} alt={feature.title} />
           <Title>{feature.title}</Title>
@@ -79,12 +117,13 @@ export default function Features({ complete }: FeaturesProps) {
 }
 
 const Container = styled.ul`
-  background: ${props => props.theme.colors.white};
+  background: ${(props) => props.theme.colors.white};
   padding: 8rem 24px;
   list-style: none;
   display: grid;
   gap: 5.6rem;
   text-align: center;
+  background: transparent;
 
   &.complete {
     padding: 6.4rem 24px;
@@ -92,7 +131,7 @@ const Container = styled.ul`
 
   @media (min-width: 768px) {
     grid-template-columns: repeat(2, 1fr);
-    padding: 12rem 24px;
+    padding: 6rem 0px;
 
     li:last-of-type {
       grid-column: 1 /3;
@@ -121,13 +160,17 @@ const Container = styled.ul`
 `;
 
 const Feature = styled.li`
-  color: ${props => props.theme.colors.black};
+  color: ${(props) => props.theme.colors.black};
 `;
 
 const Illustration = styled.img`
-  width: 72px;
-  height: 72px;
-  object-fit: contain;
+  display: block;
+  height: auto;
+  width: 100%;
+  max-height: 268px;
+  overflow: hidden;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px black;
 `;
 
 const Title = styled.h3`

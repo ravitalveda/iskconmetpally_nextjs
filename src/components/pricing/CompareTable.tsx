@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export default function CompareTable() {
   return (
@@ -14,45 +14,45 @@ export default function CompareTable() {
         <FeaturesList>
           {[
             {
-              featureTitle: "unlimited story posting",
+              featureTitle: 'unlimited story posting',
               featureDis: 3,
             },
             {
-              featureTitle: "unlimited photo upload",
+              featureTitle: 'unlimited photo upload',
               featureDis: 3,
             },
             {
-              featureTitle: "unlimited custom content",
+              featureTitle: 'unlimited custom content',
               featureDis: 2,
             },
             {
-              featureTitle: "customize metadata",
+              featureTitle: 'customize metadata',
               featureDis: 2,
             },
             {
-              featureTitle: "advanced metrics",
+              featureTitle: 'advanced metrics',
               featureDis: 1,
             },
             {
-              featureTitle: "photo downloads",
+              featureTitle: 'photo downloads',
               featureDis: 1,
             },
             {
-              featureTitle: "search engine indexing",
+              featureTitle: 'search engine indexing',
               featureDis: 1,
             },
             {
-              featureTitle: "custom analytics",
+              featureTitle: 'custom analytics',
               featureDis: 1,
             },
-          ].map(feature => (
+          ].map((feature) => (
             <FeatureItem key={feature.featureTitle}>
               <FeatureTitle>{feature.featureTitle}</FeatureTitle>
               <DisWrapper>
                 <Dis>
                   <span>basic</span>
                   {feature.featureDis === 3 ? (
-                    <img src='/assets/pricing/check.svg' alt='checked' />
+                    <img src='/images/pricing/check.svg' alt='checked' />
                   ) : (
                     <div style={{ width: 18, height: 15 }} />
                   )}
@@ -60,7 +60,7 @@ export default function CompareTable() {
                 <Dis>
                   <span>pro</span>
                   {feature.featureDis >= 2 ? (
-                    <img src='/assets/pricing/check.svg' alt='checked' />
+                    <img src='/images/pricing/check.svg' alt='checked' />
                   ) : (
                     <div style={{ width: 18, height: 15 }} />
                   )}
@@ -68,7 +68,7 @@ export default function CompareTable() {
                 <Dis>
                   <span>business</span>
                   {feature.featureDis >= 1 && (
-                    <img src='/assets/pricing/check.svg' alt='checked' />
+                    <img src='/images/pricing/check.svg' alt='checked' />
                   )}
                 </Dis>
               </DisWrapper>
@@ -81,8 +81,8 @@ export default function CompareTable() {
 }
 
 const Container = styled.section`
-  background: ${props => props.theme.colors.white};
-  color: ${props => props.theme.colors.black};
+  background: ${(props) => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.black};
   padding: 6.4rem 29px;
 
   @media (min-width: 768px) {
@@ -122,7 +122,7 @@ const SubTitle = styled.h3`
 `;
 
 const SubTitlesArea = styled.div`
-  border-bottom: 1px solid ${props => props.theme.colors.black};
+  border-bottom: 1px solid ${(props) => props.theme.colors.black};
   padding: 0 0 2.3rem 24px;
   display: flex;
   justify-content: flex-end;
@@ -147,7 +147,7 @@ const FeaturesList = styled.ul`
 
 const FeatureItem = styled.li`
   display: block;
-  border-bottom: 1px solid ${props => props.theme.colors.gray};
+  border-bottom: 1px solid ${(props) => props.theme.colors.gray};
   padding-bottom: 2.4rem;
 
   @media (min-width: 768px) {

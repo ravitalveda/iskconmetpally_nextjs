@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import Image from "next/image";
-import Link from "next/link";
+import styled from 'styled-components';
+import Image from 'next/image';
+import Link from 'next/link';
 
 interface BannerProps {
-  position: "right" | "left" | string;
+  position: 'right' | 'left' | string;
   title: string;
   description: string;
-  link?: "story" | "invite" | string;
+  link?: 'story' | 'invite' | string;
   hero?: boolean;
   image: string;
   blur: string | undefined;
@@ -21,10 +21,10 @@ export default function Banner({
   image,
   blur,
 }: BannerProps) {
-  const isLeft = position === "left" ? true : false;
+  const isLeft = position === 'left' ? true : false;
 
   return (
-    <Container className={`${hero && "hero"} ${isLeft && "left"}`}>
+    <Container className={`${hero && 'hero'} ${isLeft && 'left'}`}>
       <ImageContainer>
         <Image
           objectFit='cover'
@@ -36,19 +36,19 @@ export default function Banner({
           placeholder='blur'
         />
       </ImageContainer>
-      <TextArea className={`${hero && "hero"}`}>
+      <TextArea className={`${hero && 'hero'}`}>
         {hero && <ColorfullLine />}
         {hero ? <Title>{title}</Title> : <SubTitle>{title}</SubTitle>}
         <Description>{description}</Description>
         {link &&
-          (link === "story" ? (
+          (link === 'story' ? (
             <Link href='/stories' passHref>
               <CustomLink>
                 Read the story
                 {hero ? (
-                  <img src='/assets/shared/arrow-white.svg' alt='arrow' />
+                  <img src='/images/shared/arrow-white.svg' alt='arrow' />
                 ) : (
-                  <img src='/assets/shared/arrow-black.svg' alt='arrow' />
+                  <img src='/images/shared/arrow-black.svg' alt='arrow' />
                 )}
               </CustomLink>
             </Link>
@@ -57,9 +57,9 @@ export default function Banner({
               <CustomLink>
                 get an invite
                 {hero ? (
-                  <img src='/assets/shared/arrow-white.svg' alt='arrow' />
+                  <img src='/images/shared/arrow-white.svg' alt='arrow' />
                 ) : (
-                  <img src='/assets/shared/arrow-black.svg' alt='arrow' />
+                  <img src='/images/shared/arrow-black.svg' alt='arrow' />
                 )}
               </CustomLink>
             </Link>
@@ -139,8 +139,8 @@ const TextArea = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
-  color: ${props => props.theme.colors.black};
-  background: ${props => props.theme.colors.white};
+  color: ${(props) => props.theme.colors.black};
+  background: ${(props) => props.theme.colors.white};
   min-height: 41.9rem;
   position: relative;
 
@@ -149,8 +149,8 @@ const TextArea = styled.div`
   }
 
   &.hero {
-    color: ${props => props.theme.colors.white};
-    background: ${props => props.theme.colors.black};
+    color: ${(props) => props.theme.colors.white};
+    background: ${(props) => props.theme.colors.black};
   }
 `;
 

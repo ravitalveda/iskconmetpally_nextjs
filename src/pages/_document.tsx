@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import { ReactElement } from 'react';
 import Document, {
   Html,
   Head,
@@ -6,8 +6,8 @@ import Document, {
   NextScript,
   DocumentInitialProps,
   DocumentContext,
-} from "next/document";
-import { ServerStyleSheet } from "styled-components";
+} from 'next/document';
+import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
   static async getInitialProps(
@@ -19,7 +19,8 @@ export default class MyDocument extends Document {
     try {
       ctx.renderPage = () =>
         originalRenderPage({
-          enhanceApp: App => props => sheet.collectStyles(<App {...props} />),
+          enhanceApp: (App) => (props) =>
+            sheet.collectStyles(<App {...props} />),
         });
 
       const initialProps = await Document.getInitialProps(ctx);
@@ -45,7 +46,7 @@ export default class MyDocument extends Document {
           <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
           <meta
             name='description'
-            content='Photosnap is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.'
+            content='Sri Sri Radha Govardhandhari Mandir is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.'
           />
           <link rel='icon' href='/favicon.ico' />
           <link rel='preconnect' href='https://fonts.googleapis.com' />
