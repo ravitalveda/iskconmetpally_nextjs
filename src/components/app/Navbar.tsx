@@ -43,7 +43,7 @@ export default function Navbar() {
               'activities',
               'gallery',
               'contact',
-              'support',
+              'donate',
             ].map((link) => (
               <Link key={link} href={`/${link}`} passHref>
                 <NavLink>{link}</NavLink>

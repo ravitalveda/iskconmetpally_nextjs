@@ -65,6 +65,16 @@ const GlobalStyles = createGlobalStyle`
 	      margin-right: 0 !important;
       }
 
+      .title {
+	      text-align: center;
+        font-family: "Open Sans";
+        font-weight: 300;
+        letter-spacing: 4.5px;
+        font-size: 36px;
+        line-height: 40px;
+        color: #484338;
+      }
+
       table tbody {
 	      vertical-align: baseline !important;
       }

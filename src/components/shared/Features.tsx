@@ -107,8 +107,9 @@ export default function Features({ complete }: FeaturesProps) {
     <Container className={`${complete && 'complete'}`}>
       {list.map((feature) => (
         <Feature key={feature.title}>
-          <Illustration src={feature.image} alt={feature.title} />
           <Title>{feature.title}</Title>
+          <Illustration src={feature.image} alt={feature.title} />
+
           <Description>{feature.description}</Description>
         </Feature>
       ))}
@@ -174,9 +175,9 @@ const Illustration = styled.img`
 `;
 
 const Title = styled.h3`
-  margin: 4rem 0 1.6rem;
-  font-weight: bold;
-  font-size: 1.8rem;
+  margin: 2rem 0 1.6rem;
+  font-weight: normal;
+  font-size: 2rem;
   line-height: 139%;
 `;
 
@@ -186,4 +187,5 @@ const Description = styled.p`
   opacity: 0.6;
   max-width: 40ch;
   margin: auto;
+  padding-top: 1rem;
 `;

@@ -3,73 +3,61 @@ import styled from 'styled-components';
 export default function Contact() {
   return (
     <Container>
-      <h1>Contact Us</h1>
+      <div className='title'>Contact</div>
+      <img src='images/general/floral-decor.png' alt='donate'></img>
+      <img src='images/general/floral-decor.png' alt='donate'></img>
+      <img src='images/general/floral-decor.png' alt='donate'></img>
+      <br /> <br /> <br />
       <div>
-        <section>
-          <article>
-            <div>
-              <br />
-              <div>
-                <iframe
-                  src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12802.732744654382!2d78.65654097891372!3d18.820987129501034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6bd2d58e6afcf8bf!2sGiridhari+Kunj!5e1!3m2!1sen!2sin!4v1493376901443'
-                  height='350'
-                  style={{ border: 0, width: '100%' }}
-                  allowFullScreen
-                ></iframe>
-              </div>
-
-              <br />
-              <FeatureTitle>Our Location:</FeatureTitle>
-              <Box>
-                HARE KRISHNA MANDIRAM, <br />
-                GIRIDHARI KUNJ, <br />
-                Hare Krishna Road, <br />
-                Near peddapur Camp, <br />
-                Metpally-Korutla, Jagityal,
-                <br />
-                Telangana, pincode 505325 India.
-              </Box>
-
-              <Box>
-                <strong>Email:</strong> iskconmetpally@gmail.com
-                <br />
-                <strong>Phone:</strong> +91 94408 51408
-                <br />
-              </Box>
-              <br />
-              <br />
-
-              <FeatureTitle>Reaching us by bus:</FeatureTitle>
-              <Box>
-                From Hyderabad MGBS Bus Stand & Secundrabad Jubliee Bus Stand.
-                There are Number of buses going to Metpally or Korutla.
-              </Box>
-              <br />
-
-              <FeatureTitle>By car:</FeatureTitle>
-              <Box>
-                On NH-44 from Hyderabad to Nizamabad Highway @ Armoor Junction
-                30km on Jagtial/Warangal route. The temple is located between
-                Metpally and Korutla.
-              </Box>
-              <br />
-
-              <FeatureTitle>By train:</FeatureTitle>
-              <Box>
-                From Mumbai or Secunderabad you should arrive in Nizamabad. It
-                is the nearest Railway Station to Metpally.
-              </Box>
-
-              <FeatureTitle>By air:</FeatureTitle>
-              <Box>
-                Hyderabad International airport is 279 km away from ISKCON
-                Metpally. There are even direct busses available right from
-                airport to Metpally.
-              </Box>
-            </div>
-          </article>
-        </section>
+        <iframe
+          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12802.732744654382!2d78.65654097891372!3d18.820987129501034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6bd2d58e6afcf8bf!2sGiridhari+Kunj!5e1!3m2!1sen!2sin!4v1493376901443'
+          height='350'
+          style={{ border: 0, width: '100%' }}
+          allowFullScreen
+        ></iframe>
       </div>
+      <br />
+      <FeatureTitle>Our Location:</FeatureTitle>
+      <Box>
+        HARE KRISHNA MANDIRAM, <br />
+        GIRIDHARI KUNJ, <br />
+        Hare Krishna Road, <br />
+        Near peddapur Camp, <br />
+        Metpally-Korutla, Jagityal,
+        <br />
+        Telangana, pincode 505325 India.
+      </Box>
+      <Box>
+        <strong>Email:</strong> iskconmetpally@gmail.com
+        <br />
+        <strong>Phone:</strong> +91 94408 51408
+        <br />
+      </Box>
+      <br />
+      <br />
+      <FeatureTitle>Reaching us by bus:</FeatureTitle>
+      <Box>
+        From Hyderabad MGBS Bus Stand & Secundrabad Jubliee Bus Stand. There are
+        Number of buses going to Metpally or Korutla.
+      </Box>
+      <br />
+      <FeatureTitle>By car:</FeatureTitle>
+      <Box>
+        On NH-44 from Hyderabad to Nizamabad Highway @ Armoor Junction 30km on
+        Jagtial/Warangal route. The temple is located between Metpally and
+        Korutla.
+      </Box>
+      <br />
+      <FeatureTitle>By train:</FeatureTitle>
+      <Box>
+        From Mumbai or Secunderabad you should arrive in Nizamabad. It is the
+        nearest Railway Station to Metpally.
+      </Box>
+      <FeatureTitle>By air:</FeatureTitle>
+      <Box>
+        Hyderabad International airport is 279 km away from ISKCON Metpally.
+        There are even direct busses available right from airport to Metpally.
+      </Box>
     </Container>
   );
 }
@@ -77,7 +65,7 @@ export default function Contact() {
 (function () {
   var options = {
     whatsapp: '+919324845992', // WhatsApp number
-    call_to_action: 'Message us', // Call to action
+    call_to_action: 'How can we serve you 🙏🏼', // Call to action
     position: 'right', // Position may be 'right' or 'left'
   };
   var proto = document.location.protocol,

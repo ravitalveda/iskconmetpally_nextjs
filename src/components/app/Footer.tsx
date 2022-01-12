@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export default function Footer() {
   return (
     <Container>
-      <table style={{ width: '100%', textAlign: 'center' }}>
+      <table style={{ width: '100%', textAlign: 'center', color: 'white' }}>
         <tr> @ISKCON Metpally.</tr>
 
         <tr>

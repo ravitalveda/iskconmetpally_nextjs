@@ -8,18 +8,18 @@ import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import { Carousel } from 'react-responsive-carousel';
 import ArticleRow from '../components/shared/ArticleRow';
+import Link from 'next/link';
 
 const Home: NextPage = () => {
   return (
     <main>
       <Head>
-        <title>Photosnap | Home</title>
+        <title>Home</title>
         <link
           rel='stylesheet'
           href='node-modules/react-responsive-carousel/lib/styles/carousel.min.css'
         />
       </Head>
-
       <Carousel infiniteLoop autoPlay showThumbs={false}>
         <div>
           <img src='images/slide/homeslide.webp' alt='' />
@@ -47,22 +47,27 @@ const Home: NextPage = () => {
         </div>
       </Carousel>
       <br />
-      <Title>Main Festivals</Title>
-
+      <br /> <br />
+      <div className='title'>Main Festivals</div>
+      <div style={{ textAlign: 'center' }}>
+        <img src='images/general/floral-decor.png' alt='donate'></img>
+        <img src='images/general/floral-decor.png' alt='donate'></img>
+        <img src='images/general/floral-decor.png' alt='donate'></img>
+        <br />
+      </div>
       <Features complete={false} />
-
       <Illustration src='images/general/donate.png' alt='donate'></Illustration>
-
       <Box>
         The activities of ISKCON Metpally are solely supported by the kind
         generosity of its members, friends and well wishers. All donations are
         tax-deductible. Kindly call us or email us if you're looking to make a
         donation. Contact details available in our
-        <a href='contact.html'>contact</a> page.
+        <Link href='/contact' passHref>
+          Contact
+        </Link>{' '}
+        page.
       </Box>
-
       <Illustration src='images/general/border.png' alt='border'></Illustration>
-
       <ArticleRow complete={true}></ArticleRow>
       <br />
     </main>

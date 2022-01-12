@@ -3,6 +3,14 @@ import styled from 'styled-components';
 export default function Activities() {
   return (
     <Container>
+      <div className='title'>Activities</div>
+      <div style={{ textAlign: 'center' }}>
+        <img src='images/general/floral-decor.png' alt='donate'></img>
+        <img src='images/general/floral-decor.png' alt='donate'></img>
+        <img src='images/general/floral-decor.png' alt='donate'></img>
+        <br /> <br />
+      </div>
+
       {[
         {
           featureTitle: 'Sunday Love Feast',
@@ -36,11 +44,17 @@ export default function Activities() {
         },
       ].map((feature) => (
         <FeatureItem key={feature.featureTitle}>
-          {/* <img
-            src='images/general/chakra3.jpeg'
-            style={{ borderRadius: '50%', height: '20px' }}
-          /> */}
-          <FeatureTitle>{feature.featureTitle}</FeatureTitle>
+          <FeatureTitle>
+            <img
+              src='images/general/chakra3.jpeg'
+              style={{
+                borderRadius: '50%',
+                height: '1.3rem',
+              }}
+            />
+            <span> </span>
+            {feature.featureTitle}
+          </FeatureTitle>
           <DisWrapper>{feature.disWrapper}</DisWrapper>
         </FeatureItem>
       ))}
@@ -63,13 +77,10 @@ const FeatureItem = styled.section`
 `;
 
 const FeatureTitle = styled.h4`
-  font-weight: bold;
+  margin: 1rem 0 0;
+  font-weight: normal;
   font-size: 2rem;
-  margin-bottom: 1.6rem;
-
-  @media (min-width: 768px) {
-    margin-bottom: 1rem;
-  }
+  line-height: 139%;
 `;
 
 const DisWrapper = styled.p`

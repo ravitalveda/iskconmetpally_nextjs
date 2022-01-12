@@ -3,6 +3,13 @@ import styled from 'styled-components';
 export default function About() {
   return (
     <Container>
+      <div className='title'>About</div>
+      <div style={{ textAlign: 'center' }}>
+        <img src='images/general/floral-decor.png' alt='donate'></img>
+        <img src='images/general/floral-decor.png' alt='donate'></img>
+        <img src='images/general/floral-decor.png' alt='donate'></img>
+        <br />
+      </div>
       {[
         {
           featureTitle: 'Welcome to Sri Sri Radha Govarhandhari Mandir',

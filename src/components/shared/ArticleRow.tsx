@@ -166,9 +166,9 @@ const Article = styled.li`
 
 const Title = styled.h3`
   margin: 4rem 0 1.6rem;
-  font-weight: bold;
-  font-size: 1.8rem;
-  line-height: 139%;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 140%;
 `;
 
 const Box = styled.div`
