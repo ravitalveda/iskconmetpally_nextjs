@@ -1,8 +1,9 @@
 import React from 'react';
-import BaguetteBox from 'baguettebox.js';
 import styled from 'styled-components';
 
 export default function Gallery() {
+  const BaguetteBox = require('baguettebox.js');
+
   React.useEffect(() => {
     BaguetteBox.run('.gallery');
   }, []);

@@ -43,12 +43,14 @@ export default class MyDocument extends Document {
       <Html lang='en'>
         <Head>
           <meta charSet='utf-8' />
+          <title>Iskcon Metpally</title>
           <meta httpEquiv='X-UA-Compatible' content='IE=edge' />
           <meta
             name='description'
             content='Sri Sri Radha Govardhandhari Mandir is a platform for photographers and visual storytellers. We make it easy to share photos, tell stories and connect with others.'
           />
-          <link rel='icon' href='/favicon.ico' />
+
+          <link rel='icon' href='images/general/iskconlogo.png' />
           <link rel='preconnect' href='https://fonts.googleapis.com' />
           <link
             rel='preconnect'

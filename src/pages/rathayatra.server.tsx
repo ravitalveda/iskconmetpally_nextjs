@@ -1,8 +1,8 @@
 import React from 'react';
-import BaguetteBox from 'baguettebox.js';
 import styled from 'styled-components';
 
 export default function Gallery() {
+  const BaguetteBox = require('baguettebox.js');
   React.useEffect(() => {
     BaguetteBox.run('.gallery');
   }, []);
@@ -45,9 +45,9 @@ export default function Gallery() {
                   width='560'
                   height='315'
                   src='https://www.youtube.com/embed/qkVqXC9LL5k'
-                  frameborder='0'
+                  frameBorder='0'
                   allow='autoplay; encrypted-media'
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
               </div>
             </div>

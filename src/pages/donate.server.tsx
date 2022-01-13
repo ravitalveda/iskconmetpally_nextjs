@@ -40,8 +40,13 @@ export default function Donate() {
 }
 
 const Container = styled.section`
-  color: ${(props) => props.theme.colors.black};
-  padding-top: 4rem;
+  @media (min-width: 768px) {
+    padding: 11.2rem 40px;
+  }
+
+  @media (min-width: 768px) {
+    padding: 6rem 40px;
+  }
 `;
 
 const Illustration = styled.img`
