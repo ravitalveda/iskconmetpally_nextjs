@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <ThemeProvider theme={theme}>
         <Navbar />
-        <div style={{ width: '80%', margin: 'auto' }}>
+        <div style={{ width: '90%', margin: 'auto' }}>
           <GlobalStyles />
           <Divider />
           <Component {...pageProps} />
@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 export default MyApp;
 
 const GlobalStyles = createGlobalStyle`
-    *,
+   *,
     *::before,
     *::after {
       margin: 0;
@@ -48,7 +48,18 @@ const GlobalStyles = createGlobalStyle`
         	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+
+        @media (min-width: 768px) {
+          background-color: red;
+        }
       }
+
+      @media only screen and (max-width: 600px) {
+      body {
+      background-color: lightblue;
+      }
+    }
 
       body, select, input, button, textarea {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
@@ -59,6 +70,8 @@ const GlobalStyles = createGlobalStyle`
         line-height: 1.65;
         color:#484338;
       }
+
+
 
       .row {
 	      margin-left: 0 !important;
@@ -75,10 +88,21 @@ const GlobalStyles = createGlobalStyle`
         color: #484338;
       }
 
+      .thumbnail{
+        max-height: 200px;
+      }
+
+      .thumbnail a>img, .thumbnail>img {
+        object-fit: cover;
+      }
+
+      .tz-gallery {
+        margin-bottom: 30px;
+      }
+
       table tbody {
 	      vertical-align: baseline !important;
       }
-
     }
   `;
 

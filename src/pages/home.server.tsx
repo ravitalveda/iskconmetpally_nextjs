@@ -6,9 +6,9 @@ import Features from '../components/shared/Features';
 
 import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
-import { Carousel } from 'react-responsive-carousel';
 import ArticleRow from '../components/shared/ArticleRow';
 import Link from 'next/link';
+import { Carousel } from 'react-responsive-carousel';
 
 const Home: NextPage = () => {
   return (

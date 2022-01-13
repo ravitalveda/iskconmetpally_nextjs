@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export default function Footer() {
   return (
     <Container>
-      <table style={{ width: '100%', textAlign: 'center', color: 'white' }}>
+      <table style={{ width: '100%' }}>
         <tr> @ISKCON Metpally.</tr>
 
         <tr>
@@ -24,8 +24,8 @@ export default function Footer() {
                       y1='0%'
                       y2='100%'
                     >
-                      <stop offset='0%' stopColor='#fff' />
-                      <stop offset='100%' stopColor='#fff' />
+                      <stop offset='0%' stopColor='black' />
+                      <stop offset='100%' stopColor='black' />
                     </linearGradient>
                   </defs>
                   <path
@@ -46,8 +46,8 @@ export default function Footer() {
                       y1='100%'
                       y2='0%'
                     >
-                      <stop offset='0%' stopColor='#fff' />
-                      <stop offset='100%' stopColor='#fff' />
+                      <stop offset='0%' stopColor='black' />
+                      <stop offset='100%' stopColor='black' />
                     </linearGradient>
                   </defs>
                   <path
@@ -69,8 +69,8 @@ export default function Footer() {
                       y1='16.979%'
                       y2='83.021%'
                     >
-                      <stop offset='0%' stopColor='#fff' />
-                      <stop offset='100%' stopColor='#fff' />
+                      <stop offset='0%' stopColor='black' />
+                      <stop offset='100%' stopColor='black' />
                     </linearGradient>
                   </defs>
                   <path
@@ -87,9 +87,9 @@ export default function Footer() {
                 <svg xmlns='http://www.w3.org/2000/svg' width='21' height='20'>
                   <defs>
                     <linearGradient id='a' x1='0%' x2='50%' y1='100%' y2='0%'>
-                      <stop offset='0%' stopColor='#fff' />
-                      <stop offset='51.945%' stopColor='#fff' />
-                      <stop offset='100%' stopColor='#fff' />
+                      <stop offset='0%' stopColor='black' />
+                      <stop offset='51.945%' stopColor='black' />
+                      <stop offset='100%' stopColor='black' />
                     </linearGradient>
                   </defs>
                   <path
@@ -111,7 +111,6 @@ const Container = styled.footer`
   text-align: center;
   display: flex;
   font-size: 1.5rem;
-  background-color: #a04e4e;
   color: black;
   padding-top: 2rem;
   padding-bottom: 2rem;

@@ -14,7 +14,6 @@ const Home: NextPage = () => {
   return (
     <main>
       <Head>
-        <title>Home</title>
         <link
           rel='stylesheet'
           href='node-modules/react-responsive-carousel/lib/styles/carousel.min.css'

@@ -69,9 +69,10 @@ const Container = styled.section`
 const FeatureItem = styled.section`
   border-bottom: 1px solid ${(props) => props.theme.colors.gray};
   padding-bottom: 2.4rem;
+  text-align: center;
 
   @media (min-width: 768px) {
-    align-items: left;
+    text-align: left;
   }
 `;
 
