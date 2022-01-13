@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import ArticleRow from './ArticleRow';
 
 interface FeaturesProps {
   complete: boolean;
@@ -12,7 +11,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
         <Title>Inside ISKCON Metpally</Title>
 
         <Box>
-          <a href='inside.html'>
+          <a href='/inside'>
             <Image src='images/inside/(34).jpg' />
           </a>
         </Box>
@@ -21,7 +20,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
         <Title>Janmashtami</Title>
 
         <Box>
-          <a href='janmashtami.html'>
+          <a href='/janmashtami'>
             <Image src='images/janmashtami/(36).jpg' />
           </a>
         </Box>
@@ -30,7 +29,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
         <Title>Pushpabhishekam</Title>
 
         <Box>
-          <a href='puspha.html'>
+          <a href='/pushpabhishekam'>
             <Image src='images/pushpabhishekam/(14).jpg' />
           </a>
         </Box>
@@ -39,7 +38,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
         <Title>Govardhan Puja</Title>
 
         <Box>
-          <a href='govardhan.html'>
+          <a href='/govardhan'>
             <Image src='images/govardhan/(27).jpg' />
           </a>
         </Box>
@@ -48,7 +47,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
         <Title>Ratha Yatra</Title>
 
         <Box>
-          <a href='rathayatra.html'>
+          <a href='/rathayatra'>
             <Image src='images/smallarticle/ratha1.webp' />
           </a>
         </Box>
@@ -57,7 +56,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
         <Title>Sri Narasimha Chaturdashi</Title>
 
         <Box>
-          <a href='puspha.html'>
+          <a href=''>
             <Image src='images/smallarticle/narasimha.webp' />
           </a>
         </Box>
@@ -67,7 +66,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
         <Title>Brahmotsavam</Title>
 
         <Box>
-          <a href='brahmotsavam.html'>
+          <a href='/brahmotsavam'>
             <Image src='images/brahmotsavam/5.jpg' />
           </a>
         </Box>
@@ -76,7 +75,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
         <Title>Sharad Purnima</Title>
 
         <Box>
-          <a href='sharadpurnima.html'>
+          <a href='/sharadpurnima'>
             <Image src='images/sharadpurnima/3.jpg' />
           </a>
         </Box>
@@ -85,7 +84,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
         <Title>Balaram Jayanti</Title>
 
         <Box>
-          <a href='balaram.html'>
+          <a href='/balaram'>
             <Image src='images/balaram/5.webp' />
           </a>
         </Box>
