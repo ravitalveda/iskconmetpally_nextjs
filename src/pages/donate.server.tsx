@@ -1,14 +1,18 @@
 import Link from 'next/link';
+import FloatingWhatsApp from 'react-floating-whatsapp';
 import styled from 'styled-components';
+import Image from 'next/image';
+
+import border from '../../public/images/general/floral-decor.png';
 
 export default function Donate() {
   return (
     <Container>
       <div className='title'>Donate</div>
       <div style={{ textAlign: 'center' }}>
-        <img src='images/general/floral-decor.png' alt='donate'></img>
-        <img src='images/general/floral-decor.png' alt='donate'></img>
-        <img src='images/general/floral-decor.png' alt='donate'></img>
+        <Image src={border} alt=''></Image>
+        <Image src={border} alt=''></Image>
+        <Image src={border} alt=''></Image>
         <br /> <br />
       </div>
       <Illustration src='images/general/donate.png' alt='donate'></Illustration>
@@ -26,7 +30,11 @@ export default function Donate() {
 
       <Illustration src='images/general/border.png' alt='border'></Illustration>
 
-      <Illustration src='images/general/upi.jpg' alt='Upi account details' />
+      <Illustration
+        style={{ maxWidth: '400px' }}
+        src='images/general/upi.jpg'
+        alt='Upi account details'
+      />
 
       <FeatureTitle>
         Please accept our humble obeisances
@@ -35,11 +43,17 @@ export default function Donate() {
           <b>- Your humble wellwishers @ ISKCON Metpally</b>
         </i>
       </FeatureTitle>
+      <FloatingWhatsApp
+        phoneNumber='919885773787'
+        accountName={'Iskcon Metpally'}
+        chatMessage='Hare Krishna! How can we serve you? 🙏🏼'
+      />
     </Container>
   );
 }
 
 const Container = styled.section`
+  text-align: center;
   @media (min-width: 768px) {
     padding: 11.2rem 40px;
   }

@@ -1,12 +1,16 @@
 import styled from 'styled-components';
+import React from 'react';
+import FloatingWhatsApp from 'react-floating-whatsapp';
+import Image from 'next/image';
+import border from '../../public/images/general/floral-decor.png';
 
 export default function Contact() {
   return (
     <Container>
       <div className='title'>Contact</div>
-      <img src='images/general/floral-decor.png' alt='donate'></img>
-      <img src='images/general/floral-decor.png' alt='donate'></img>
-      <img src='images/general/floral-decor.png' alt='donate'></img>
+      <Image src={border} alt=''></Image>
+      <Image src={border} alt=''></Image>
+      <Image src={border} alt=''></Image>
       <br /> <br /> <br />
       <div>
         <iframe
@@ -58,29 +62,14 @@ export default function Contact() {
         Hyderabad International airport is 279 km away from ISKCON Metpally.
         There are even direct busses available right from airport to Metpally.
       </Box>
+      <FloatingWhatsApp
+        phoneNumber='919885773787'
+        accountName={'Iskcon Metpally'}
+        chatMessage='Hare Krishna! How can we serve you? 🙏🏼'
+      />
     </Container>
   );
 }
-
-(function () {
-  var options = {
-    whatsapp: '+919324845992', // WhatsApp number
-    call_to_action: 'How can we serve you 🙏🏼', // Call to action
-    position: 'right', // Position may be 'right' or 'left'
-  };
-  var proto = document.location.protocol,
-    host = 'getbutton.io',
-    url = proto + '//static.' + host;
-  var s = document.createElement('script');
-  s.type = 'text/javascript';
-  s.async = true;
-  s.src = url + '/widget-send-button/js/init.js';
-  s.onload = function () {
-    WhWidgetSendButton.init(host, proto, options);
-  };
-  var x = document.getElementsByTagName('script')[0];
-  x.parentNode.insertBefore(s, x);
-})();
 
 const Container = styled.section`
   @media (min-width: 768px) {

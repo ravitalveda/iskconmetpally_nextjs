@@ -1,13 +1,16 @@
 import styled from 'styled-components';
+import Image from 'next/image';
+
+import border from '../../public/images/general/floral-decor.png';
 
 export default function Activities() {
   return (
     <Container>
       <div className='title'>Activities</div>
       <div style={{ textAlign: 'center' }}>
-        <img src='images/general/floral-decor.png' alt='donate'></img>
-        <img src='images/general/floral-decor.png' alt='donate'></img>
-        <img src='images/general/floral-decor.png' alt='donate'></img>
+        <Image src={border} alt=''></Image>
+        <Image src={border} alt=''></Image>
+        <Image src={border} alt=''></Image>
         <br /> <br />
       </div>
 
@@ -15,12 +18,12 @@ export default function Activities() {
         {
           featureTitle: 'Sunday Love Feast',
           disWrapper:
-            'Following in the footsteps of Srila prabhupada every sunday we organize “Sunday Love Feast” program in temple. Program includes discourse, kirtan & followed by sumptuous prasadam.',
+            'Following in the footsteps of Srila prabhupada every sunday we organize <Sunday Love Feast> program in temple. Program includes discourse, kirtan & followed by sumptuous prasadam.',
         },
         {
           featureTitle: 'Harinaam Sankirtan',
           disWrapper:
-            'Lord Chaitanya Mahaprabhu’s main mission is harinaam sankritan. Every week devotees perform harinaam sankirtan within town or village to village propagating the holynames & distributing Srila prabhupada books.',
+            'Lord Chaitanya Mahaprabhus main mission is harinaam sankritan. Every week devotees perform harinaam sankirtan within town or village to village propagating the holynames & distributing Srila prabhupada books.',
         },
         {
           featureTitle: 'Bhagavad Gita Classes',
