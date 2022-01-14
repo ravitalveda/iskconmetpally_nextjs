@@ -20,7 +20,8 @@ export default function BetaInvite() {
       </ImageWrapper>
       <ContentWrapper>
         <Title>
-          We’re in beta. <br /> Get your invite <br /> today!
+          Please do not miss <br /> to join us <br /> on this fentastic
+          festival!
         </Title>
         <Link href='/' passHref>
           <CustomLink>
@@ -91,20 +92,20 @@ const ContentWrapper = styled.div`
 
 const Title = styled.h2`
   font-weight: bold;
-  font-size: 3.2rem;
+  font-size: 1.2rem;
   line-height: 125%;
   letter-spacing: 0.33rem;
   text-transform: uppercase;
   margin-bottom: 2.4rem;
 
   @media (min-width: 768px) {
-    font-size: 4rem;
+    font-size: 2rem;
     letter-spacing: 0.41rem;
     margin-bottom: 0;
   }
 
   @media (min-width: 950px) {
-    font-size: 4.5rem;
+    font-size: 2.5rem;
   }
 `;
 

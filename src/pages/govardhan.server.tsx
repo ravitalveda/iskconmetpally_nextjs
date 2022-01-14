@@ -1,6 +1,30 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import Image from 'next/image';
+
+import g1 from '../../public/images/govardhan/1.jpg';
+import g2 from '../../public/images/govardhan/2.jpg';
+import g3 from '../../public/images/govardhan/3.jpg';
+import g4 from '../../public/images/govardhan/4.jpg';
+import g5 from '../../public/images/govardhan/3.jpg';
+import g6 from '../../public/images/govardhan/4.jpg';
+import g7 from '../../public/images/govardhan/7.jpg';
+import g8 from '../../public/images/govardhan/8.jpg';
+import g9 from '../../public/images/govardhan/9.jpg';
+import g10 from '../../public/images/govardhan/10.jpg';
+import g11 from '../../public/images/govardhan/11.jpg';
+import g12 from '../../public/images/govardhan/12.jpg';
+import g13 from '../../public/images/govardhan/13.jpg';
+import g14 from '../../public/images/govardhan/14.jpg';
+import g15 from '../../public/images/govardhan/15.jpg';
+import g16 from '../../public/images/govardhan/16.jpg';
+import g17 from '../../public/images/govardhan/17.jpg';
+import g18 from '../../public/images/govardhan/18.jpg';
+import g19 from '../../public/images/govardhan/19.jpg';
+import g20 from '../../public/images/govardhan/20.jpg';
+import g21 from '../../public/images/govardhan/21.jpg';
+
 export default function Gallery() {
   const BaguetteBox = require('baguettebox.js');
   React.useEffect(() => {
@@ -43,45 +67,45 @@ export default function Gallery() {
               <div className='row'>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(1).jpg'>
-                      <img src='images/govardhan/(1).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/1.jpg'>
+                      <Image src={g1} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(10).jpg'>
-                      <img src='images/govardhan/(10).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/2.jpg'>
+                      <Image src={g2} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <div className='thumbnail'>
-                      <a className='lightbox' href='images/govardhan/(11).jpg'>
-                        <img src='images/govardhan/(11).jpg' alt='Park' />
+                      <a className='lightbox' href='images/govardhan/3.jpg'>
+                        <Image src={g3} alt=''></Image>
                       </a>
                     </div>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(28).jpg'>
-                      <img src='images/govardhan/(28).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/4.jpg'>
+                      <Image src={g4} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(13).jpg'>
-                      <img src='images/govardhan/(13).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/5.jpg'>
+                      <Image src={g5} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(14).jpg'>
-                      <img src='images/govardhan/(14).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/6.jpg'>
+                      <Image src={g6} alt=''></Image>
                     </a>
                   </div>
                 </div>
@@ -90,45 +114,45 @@ export default function Gallery() {
               <div className='row'>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(15).jpg'>
-                      <img src='images/govardhan/(15).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/7.jpg'>
+                      <Image src={g7} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(16).jpg'>
-                      <img src='images/govardhan/(16).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/8.jpg'>
+                      <Image src={g8} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <div className='thumbnail'>
-                      <a className='lightbox' href='images/govardhan/(17).jpg'>
-                        <img src='images/govardhan/(17).jpg' alt='Park' />
+                      <a className='lightbox' href='images/govardhan/9.jpg'>
+                        <Image src={g9} alt=''></Image>
                       </a>
                     </div>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(18).jpg'>
-                      <img src='images/govardhan/(18).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/10.jpg'>
+                      <Image src={g10} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(25).jpg'>
-                      <img src='images/govardhan/(25).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/11.jpg'>
+                      <Image src={g11} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(20).jpg'>
-                      <img src='images/govardhan/(20).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/12.jpg'>
+                      <Image src={g12} alt=''></Image>
                     </a>
                   </div>
                 </div>
@@ -137,78 +161,75 @@ export default function Gallery() {
               <div className='row'>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(21).jpg'>
-                      <img src='images/govardhan/(21).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/13.jpg'>
+                      <Image src={g13} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <div className='thumbnail'>
-                      <a className='lightbox' href='images/govardhan/(29).jpg'>
-                        <img src='images/govardhan/(29).jpg' alt='Park' />
+                      <a className='lightbox' href='images/govardhan/14.jpg'>
+                        <Image src={g14} alt=''></Image>
                       </a>
                     </div>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(22).jpg'>
-                      <img src='images/govardhan/(22).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/15.jpg'>
+                      <Image src={g15} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(19).jpg'>
-                      <img src='images/govardhan/(19).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/16.jpg'>
+                      <Image src={g16} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <div className='thumbnail'>
-                      <a className='lightbox' href='images/govardhan/(23).jpg'>
-                        <img src='images/govardhan/(23).jpg' alt='Park' />
+                      <a className='lightbox' href='images/govardhan/17.jpg'>
+                        <Image src={g17} alt=''></Image>
                       </a>
                     </div>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(24).jpg'>
-                      <img src='images/govardhan/(24).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/18.jpg'>
+                      <Image src={g18} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(25).jpg'>
-                      <img src='images/govardhan/(25).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/19.jpg'>
+                      <Image src={g19} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(26).jpg'>
-                      <img src='images/govardhan/(26).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/20.jpg'>
+                      <Image src={g20} alt=''></Image>
                     </a>
                   </div>
                 </div>
 
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/govardhan/(27).jpg'>
-                      <img src='images/govardhan/(27).jpg' alt='Park' />
+                    <a className='lightbox' href='images/govardhan/21.jpg'>
+                      <Image src={g21} alt=''></Image>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <script src='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js'></script>
-          <script>baguetteBox.run(".tz-gallery");</script>
         </div>
       </div>
       <script src='assets/js/jquery.min.js'></script>

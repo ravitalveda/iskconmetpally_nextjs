@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 import GalleryItems from '../components/shared/GalleryItems';
+import Image from 'next/image';
 
-export default function Gallery() {
+import border from '../../public/images/general/floral-decor.png';
+
+export default function Gallery(): JSX.Element {
   return (
     <Container>
       <div className='title'>Gallery</div>
       <div style={{ textAlign: 'center' }}>
-        <img src='images/general/floral-decor.png' alt='donate'></img>
-        <img src='images/general/floral-decor.png' alt='donate'></img>
-        <img src='images/general/floral-decor.png' alt='donate'></img>
+        <Image src={border} alt=''></Image>
+        <Image src={border} alt=''></Image>
+        <Image src={border} alt=''></Image>
         <br /> <br />
       </div>
 

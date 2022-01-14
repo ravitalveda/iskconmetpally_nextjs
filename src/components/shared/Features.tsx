@@ -10,7 +10,7 @@ export default function Features({ complete }: FeaturesProps) {
       image: '/images/features/responsive.svg',
       title: 'Nandotsav',
       description:
-        'Nandotsav is a festival celebrated the day after the festival Janmashtami, which celebrates the Lord Krishnas birth. It is believed that all the villagers of Braj visited Nand Baba"s house to see little Krishna and congratulate Mata Yashoda. Nand Baba distributed ornaments, clothes, cattle and various other valuables among saints and sages. All saints and sages bestowed blessings on Lord Krishna in return.',
+        'Nandotsav is a festival celebrated the day after the festival Janmashtami, which celebrates the Lord Krishnas birth. It is believed that all the villagers of Braj visited house of Nand Baba to see little Krishna and congratulate Mata Yashoda. Nand Baba distributed ornaments, clothes, cattle and various other valuables among saints and sages. All saints and sages bestowed blessings on Lord Krishna in return.',
     },
     {
       image: '/images/features/no-limit.svg',
@@ -61,7 +61,7 @@ export default function Features({ complete }: FeaturesProps) {
       image: 'images/smallarticle/10.webp',
       title: 'Nandotsav',
       description:
-        'Nandotsav is a festival celebrated the day after the festival Janmashtami, which celebrates the Lord Krishnas birth. It is believed that all the villagers of Braj visited Nand Baba"s house to see little Krishna and congratulate Mata Yashoda. Nand Baba distributed ornaments, clothes, cattle and various other valuables among saints and sages. All saints and sages bestowed blessings on Lord Krishna in return.',
+        'Nandotsav is a festival celebrated the day after the festival Janmashtami, which celebrates the Lord Krishnas birth. It is believed that all the villagers of Braj visited house of Nand Baba to see little Krishna and congratulate Mata Yashoda. Nand Baba distributed ornaments, clothes, cattle and various other valuables among saints and sages. All saints and sages bestowed blessings on Lord Krishna in return.',
     },
     {
       image: 'images/smallarticle/bala2.webp',
@@ -80,7 +80,7 @@ export default function Features({ complete }: FeaturesProps) {
       image: 'images/brahmotsavam/5.jpg',
       title: 'Brahmotsavam',
       description:
-        "On this auspicious day of Akshaya Tritiya, Sri Sri Radha Giridhari rides on palanquin. Also, this is starting day of Chandan Yatra where Lord's whole body is smeared with sandalwood paste for 21 days which provides the Lord relief from the scorching heat of summer.",
+        'On this auspicious day of Akshaya Tritiya, Sri Sri Radha Giridhari rides on palanquin. Also, this is starting day of Chandan Yatra where Lords whole body is smeared with sandalwood paste for 21 days which provides the Lord relief from the scorching heat of summer.',
     },
     {
       image: 'images/smallarticle/gaurpurnima.webp',

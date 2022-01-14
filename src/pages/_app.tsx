@@ -14,17 +14,18 @@ function MyApp({ Component, pageProps }: AppProps) {
   };
 
   return (
-    <>
-      <ThemeProvider theme={theme}>
-        <Navbar />
-        <div style={{ width: '90%', margin: 'auto' }}>
-          <GlobalStyles />
-          <Divider />
-          <Component {...pageProps} />
-        </div>
-        <Footer />
-      </ThemeProvider>
-    </>
+    <ThemeProvider theme={theme}>
+      <head>
+        <title>Iskcon Metpally</title>
+      </head>
+      <Navbar />
+      <div style={{ width: '90%', margin: 'auto' }}>
+        <GlobalStyles />
+        <Divider />
+        <Component {...pageProps} />
+      </div>
+      <Footer />
+    </ThemeProvider>
   );
 }
 export default MyApp;
@@ -48,11 +49,6 @@ const GlobalStyles = createGlobalStyle`
         	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-
-
-        @media (min-width: 768px) {
-          background-color: red;
-        }
       }
 
       @media only screen and (max-width: 600px) {
@@ -80,7 +76,7 @@ const GlobalStyles = createGlobalStyle`
 
       .title {
 	      text-align: center;
-        font-family: "Open Sans";
+        font-family: 'Open Sans';
         font-weight: 300;
         letter-spacing: 4.5px;
         font-size: 36px;
@@ -96,7 +92,7 @@ const GlobalStyles = createGlobalStyle`
         object-fit: cover;
       }
 
-      .tz-gallery {
+      .gallery {
         margin-bottom: 30px;
       }
 

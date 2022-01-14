@@ -1,6 +1,6 @@
-import { useState } from "react";
-import styled from "styled-components";
-import PricingCard from "./PricingCard";
+import { useState } from 'react';
+import styled from 'styled-components';
+import PricingCard from './PricingCard';
 
 export default function PricingList() {
   const [yearly, setYearly] = useState<boolean>(false);
@@ -8,36 +8,36 @@ export default function PricingList() {
   return (
     <Container>
       <SwitcherWrapper>
-        <span className={`${yearly && "yearly"}`}>Monthly</span>
+        <span className={`${yearly && 'yearly'}`}>Monthly</span>
         <Switcher
           type='button'
-          onClick={() => setYearly(prev => !prev)}
-          className={`${yearly && "yearly"}`}
+          onClick={() => setYearly((prev) => !prev)}
+          className={`${yearly && 'yearly'}`}
         ></Switcher>
-        <span className={`${yearly && "yearly"}`}>Yearly</span>
+        <span className={`${yearly && 'yearly'}`}>Yearly</span>
       </SwitcherWrapper>
       <List>
         {[
           {
-            title: "Basic",
+            title: 'Basic',
             description:
-              "Includes basic usage of our platform. Recommended for new and aspiring photographers.",
+              'Includes basic usage of our platform. Recommended for new and aspiring photographers.',
             basePrice: 19,
           },
           {
-            title: "Pro",
+            title: 'Pro',
             description:
-              "More advanced features available. Recommended for photography veterans and professionals.",
+              'More advanced features available. Recommended for photography veterans and professionals.',
             basePrice: 39,
             mainCard: true,
           },
           {
-            title: "Business",
+            title: 'Business',
             description:
-              "Additional features available such as more detailed metrics. Recommended for business owners.",
+              'Additional features available such as more detailed metrics. Recommended for business owners.',
             basePrice: 99,
           },
-        ].map(card => (
+        ].map((card) => (
           <PricingCard key={card.title} yearly={yearly} data={card} />
         ))}
       </List>
@@ -46,7 +46,7 @@ export default function PricingList() {
 }
 
 const Container = styled.section`
-  background: ${props => props.theme.colors.white};
+  background: ${(props) => props.theme.colors.white};
   padding: 6.4rem 29px 0;
 
   @media (min-width: 768px) {
@@ -67,7 +67,7 @@ const SwitcherWrapper = styled.div`
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 139%;
-    color: ${props => props.theme.colors.black};
+    color: ${(props) => props.theme.colors.black};
     transition: opacity 0.3s ease;
   }
 
@@ -92,7 +92,7 @@ const SwitcherWrapper = styled.div`
 const Switcher = styled.button`
   width: 6.4rem;
   height: 3.2rem;
-  background: ${props => props.theme.colors.gray};
+  background: ${(props) => props.theme.colors.gray};
   border-radius: 1.6rem;
   border: none;
   position: relative;
@@ -103,11 +103,11 @@ const Switcher = styled.button`
   }
 
   &::before {
-    content: "";
+    content: '';
     border-radius: 50%;
     width: 24px;
     height: 24px;
-    background: ${props => props.theme.colors.black};
+    background: ${(props) => props.theme.colors.black};
     display: block;
     position: absolute;
     left: 4px;

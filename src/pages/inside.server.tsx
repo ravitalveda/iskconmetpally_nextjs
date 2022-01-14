@@ -1,7 +1,55 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export default function Gallery() {
+import Image from 'next/image';
+
+import p1 from '../../public/images/inside/1.webp';
+import p2 from '../../public/images/inside/2.webp';
+import p3 from '../../public/images/inside/3.webp';
+import p4 from '../../public/images/inside/4.webp';
+import p5 from '../../public/images/inside/3.webp';
+import p6 from '../../public/images/inside/4.webp';
+import p7 from '../../public/images/inside/7.webp';
+import p8 from '../../public/images/inside/8.webp';
+import p9 from '../../public/images/inside/9.webp';
+import p10 from '../../public/images/inside/10.webp';
+import p11 from '../../public/images/inside/11.webp';
+import p12 from '../../public/images/inside/12.webp';
+import p13 from '../../public/images/inside/13.webp';
+import p14 from '../../public/images/inside/14.webp';
+import p15 from '../../public/images/inside/15.webp';
+import p16 from '../../public/images/inside/16.webp';
+import p17 from '../../public/images/inside/17.webp';
+import p18 from '../../public/images/inside/18.webp';
+import p19 from '../../public/images/inside/19.webp';
+import p20 from '../../public/images/inside/20.webp';
+import p21 from '../../public/images/inside/21.webp';
+import p22 from '../../public/images/inside/22.webp';
+import p23 from '../../public/images/inside/23.webp';
+import p24 from '../../public/images/inside/24.webp';
+import p25 from '../../public/images/inside/23.webp';
+import p26 from '../../public/images/inside/24.webp';
+import p27 from '../../public/images/inside/27.webp';
+import p28 from '../../public/images/inside/28.webp';
+import p29 from '../../public/images/inside/29.webp';
+import p30 from '../../public/images/inside/30.webp';
+import p31 from '../../public/images/inside/31.webp';
+import p32 from '../../public/images/inside/32.webp';
+import p33 from '../../public/images/inside/33.webp';
+import p34 from '../../public/images/inside/34.webp';
+import p35 from '../../public/images/inside/35.webp';
+import p36 from '../../public/images/inside/36.webp';
+import p37 from '../../public/images/inside/37.webp';
+import p38 from '../../public/images/inside/38.webp';
+import p39 from '../../public/images/inside/39.webp';
+import p40 from '../../public/images/inside/40.webp';
+import p41 from '../../public/images/inside/41.webp';
+import p42 from '../../public/images/inside/42.webp';
+import p43 from '../../public/images/inside/43.webp';
+import p44 from '../../public/images/inside/44.webp';
+import p45 from '../../public/images/inside/45.webp';
+
+export default function Inside() {
   const BaguetteBox = require('baguettebox.js');
   React.useEffect(() => {
     BaguetteBox.run('.gallery');
@@ -43,48 +91,45 @@ export default function Gallery() {
               <div className='row'>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(36).jpg'>
-                      <img src='images/inside/(36).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/1.webp'>
+                      <Image src={p1} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(17).jpg'>
-                      <img src='images/inside/(17).jpg' alt='Park' />
-                    </a>
-                  </div>
-                </div>
-                <div className='col-sm-6 col-md-4'>
-                  <div className='thumbnail'>
-                    <div className='thumbnail'>
-                      <a className='lightbox' href='images/inside/(13).jpg'>
-                        <img src='images/inside/(13).jpg' alt='Park' />
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className='col-sm-6 col-md-4'>
-                  <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(10).jpg'>
-                      <img src='images/inside/(10).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/2.webp'>
+                      <Image src={p2} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <div className='thumbnail'>
-                      <a className='lightbox' href='images/inside/(11).jpg'>
-                        <img src='images/inside/(11).jpg' alt='Park' />
+                      <a className='lightbox' href='images/inside/3.webp'>
+                        <Image src={p3} alt=''></Image>
                       </a>
                     </div>
                   </div>
                 </div>
-
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(14).jpg'>
-                      <img src='images/inside/(14).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/4.webp'>
+                      <Image src={p4} alt=''></Image>
+                    </a>
+                  </div>
+                </div>
+                <div className='col-sm-6 col-md-4'>
+                  <div className='thumbnail'>
+                    <a className='lightbox' href='images/inside/5.webp'>
+                      <Image src={p5} alt=''></Image>
+                    </a>
+                  </div>
+                </div>
+                <div className='col-sm-6 col-md-4'>
+                  <div className='thumbnail'>
+                    <a className='lightbox' href='images/inside/6.webp'>
+                      <Image src={p6} alt=''></Image>
                     </a>
                   </div>
                 </div>
@@ -93,45 +138,45 @@ export default function Gallery() {
               <div className='row'>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(12).jpg'>
-                      <img src='images/inside/(12).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/7.webp'>
+                      <Image src={p7} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(15).jpg'>
-                      <img src='images/inside/(15).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/8.webp'>
+                      <Image src={p8} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(16).jpg'>
-                      <img src='images/inside/(16).jpg' alt='Park' />
-                    </a>
-                  </div>
-                </div>
-
-                <div className='col-sm-6 col-md-4'>
-                  <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(18).jpg'>
-                      <img src='images/inside/(18).jpg' alt='Park' />
-                    </a>
+                    <div className='thumbnail'>
+                      <a className='lightbox' href='images/inside/9.webp'>
+                        <Image src={p9} alt=''></Image>
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(20).jpg'>
-                      <img src='images/inside/(20).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/10.webp'>
+                      <Image src={p10} alt=''></Image>
                     </a>
                   </div>
                 </div>
-
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(32).jpg'>
-                      <img src='images/inside/(32).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/11.webp'>
+                      <Image src={p11} alt=''></Image>
+                    </a>
+                  </div>
+                </div>
+                <div className='col-sm-6 col-md-4'>
+                  <div className='thumbnail'>
+                    <a className='lightbox' href='images/inside/12.webp'>
+                      <Image src={p12} alt=''></Image>
                     </a>
                   </div>
                 </div>
@@ -140,68 +185,94 @@ export default function Gallery() {
               <div className='row'>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(21).jpg'>
-                      <img src='images/inside/(21).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/13.webp'>
+                      <Image src={p13} alt=''></Image>
+                    </a>
+                  </div>
+                </div>
+                <div className='col-sm-6 col-md-4'>
+                  <div className='thumbnail'>
+                    <a className='lightbox' href='images/inside/14.webp'>
+                      <Image src={p14} alt=''></Image>
+                    </a>
+                  </div>
+                </div>
+                <div className='col-sm-6 col-md-4'>
+                  <div className='thumbnail'>
+                    <a className='lightbox' href='images/inside/15.webp'>
+                      <Image src={p15} alt=''></Image>
+                    </a>
+                  </div>
+                </div>
+                <div className='col-sm-6 col-md-4'>
+                  <div className='thumbnail'>
+                    <a className='lightbox' href='images/inside/16.webp'>
+                      <Image src={p16} alt=''></Image>
+                    </a>
+                  </div>
+                </div>
+                <div className='col-sm-6 col-md-4'>
+                  <div className='thumbnail'>
+                    <a className='lightbox' href='images/inside/17.webp'>
+                      <Image src={p17} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <div className='thumbnail'>
-                      <a className='lightbox' href='images/inside/(29).jpg'>
-                        <img src='images/inside/(29).jpg' alt='Park' />
+                      <a className='lightbox' href='images/inside/18.webp'>
+                        <Image src={p18} alt=''></Image>
                       </a>
                     </div>
                   </div>
                 </div>
+              </div>
+
+              <div className='row'>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(22).jpg'>
-                      <img src='images/inside/(22).jpg' alt='Park' />
-                    </a>
-                  </div>
-                </div>
-                <div className='col-sm-6 col-md-4'>
-                  <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(25).jpg'>
-                      <img src='images/inside/(25).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/19.webp'>
+                      <Image src={p19} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <div className='thumbnail'>
-                      <a className='lightbox' href='images/inside/(23).jpg'>
-                        <img src='images/inside/(23).jpg' alt='Park' />
+                      <a className='lightbox' href='images/inside/20.webp'>
+                        <Image src={p20} alt=''></Image>
                       </a>
                     </div>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(24).jpg'>
-                      <img src='images/inside/(24).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/21.webp'>
+                      <Image src={p21} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(19).jpg'>
-                      <img src='images/inside/(19).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/22.webp'>
+                      <Image src={p22} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(26).jpg'>
-                      <img src='images/inside/(26).jpg' alt='Park' />
-                    </a>
+                    <div className='thumbnail'>
+                      <a className='lightbox' href='images/inside/23.webp'>
+                        <Image src={p23} alt=''></Image>
+                      </a>
+                    </div>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(30).jpg'>
-                      <img src='images/inside/(30).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/24.webp'>
+                      <Image src={p24} alt=''></Image>
                     </a>
                   </div>
                 </div>
@@ -210,135 +281,161 @@ export default function Gallery() {
               <div className='row'>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(27).jpg'>
-                      <img src='images/inside/(27).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/25.webp'>
+                      <Image src={p25} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(28).jpg'>
-                      <img src='images/inside/(28).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/26.webp'>
+                      <Image src={p26} alt=''></Image>
                     </a>
                   </div>
                 </div>
 
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(31).jpg'>
-                      <img src='images/inside/(31).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/27.webp'>
+                      <Image src={p27} alt=''></Image>
                     </a>
                   </div>
                 </div>
-              </div>
+                <div className='col-sm-6 col-md-4'>
+                  <div className='thumbnail'>
+                    <a className='lightbox' href='images/inside/28.webp'>
+                      <Image src={p28} alt=''></Image>
+                    </a>
+                  </div>
+                </div>
+                <div className='col-sm-6 col-md-4'>
+                  <div className='thumbnail'>
+                    <a className='lightbox' href='images/inside/29.webp'>
+                      <Image src={p29} alt=''></Image>
+                    </a>
+                  </div>
+                </div>
+                <div className='col-sm-6 col-md-4'>
+                  <div className='thumbnail'>
+                    <a className='lightbox' href='images/inside/30.webp'>
+                      <Image src={p30} alt=''></Image>
+                    </a>
+                  </div>
+                </div>
 
-              <div className='row'>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(33).jpg'>
-                      <img src='images/inside/(33).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/31.webp'>
+                      <Image src={p31} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(34).jpg'>
-                      <img src='images/inside/(34).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/32.webp'>
+                      <Image src={p32} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <div className='thumbnail'>
-                      <a className='lightbox' href='images/inside/(35).jpg'>
-                        <img src='images/inside/(35).jpg' alt='Park' />
+                      <a className='lightbox' href='images/inside/33.webp'>
+                        <Image src={p33} alt=''></Image>
                       </a>
                     </div>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(1).jpg'>
-                      <img src='images/inside/(1).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/34.webp'>
+                      <Image src={p34} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(37).jpg'>
-                      <img src='images/inside/(37).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/35.webp'>
+                      <Image src={p35} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(38).jpg'>
-                      <img src='images/inside/(38).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/36.webp'>
+                      <Image src={p36} alt=''></Image>
                     </a>
                   </div>
                 </div>
-
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(39).jpg'>
-                      <img src='images/inside/(39).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/37.webp'>
+                      <Image src={p37} alt=''></Image>
                     </a>
                   </div>
                 </div>
-
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(40).jpg'>
-                      <img src='images/inside/(40).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/38.webp'>
+                      <Image src={p38} alt=''></Image>
                     </a>
                   </div>
                 </div>
-
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(41).jpg'>
-                      <img src='images/inside/(41).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/39.webp'>
+                      <Image src={p39} alt=''></Image>
                     </a>
                   </div>
                 </div>
-
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(42).jpg'>
-                      <img src='images/inside/(42).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/40.webp'>
+                      <Image src={p40} alt=''></Image>
                     </a>
                   </div>
                 </div>
 
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(43).jpg'>
-                      <img src='images/inside/(43).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/41.webp'>
+                      <Image src={p41} alt=''></Image>
                     </a>
                   </div>
                 </div>
-
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(44).jpg'>
-                      <img src='images/inside/(44).jpg' alt='Park' />
+                    <a className='lightbox' href='images/inside/42.webp'>
+                      <Image src={p42} alt=''></Image>
                     </a>
                   </div>
                 </div>
-
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/inside/(45).jpg'>
-                      <img src='images/inside/(45).jpg' alt='Park' />
+                    <div className='thumbnail'>
+                      <a className='lightbox' href='images/inside/43.webp'>
+                        <Image src={p43} alt=''></Image>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className='col-sm-6 col-md-4'>
+                  <div className='thumbnail'>
+                    <a className='lightbox' href='images/inside/44.webp'>
+                      <Image src={p44} alt=''></Image>
+                    </a>
+                  </div>
+                </div>
+                <div className='col-sm-6 col-md-4'>
+                  <div className='thumbnail'>
+                    <a className='lightbox' href='images/inside/45.webp'>
+                      <Image src={p45} alt=''></Image>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <script src='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js'></script>
-          <script>baguetteBox.run(".tz-gallery");</script>
         </div>
       </div>
       <script src='assets/js/jquery.min.js'></script>

@@ -1,5 +1,11 @@
 import React from 'react';
+import Image from 'next/image';
+
 import styled from 'styled-components';
+import s1 from '../../public/images/sharadpurnima/1.jpg';
+import s2 from '../../public/images/sharadpurnima/2.jpg';
+import s3 from '../../public/images/sharadpurnima/3.jpg';
+import s4 from '../../public/images/sharadpurnima/4.jpg';
 
 export default function Gallery() {
   const BaguetteBox = require('baguettebox.js');
@@ -30,6 +36,7 @@ export default function Gallery() {
           href='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css'
         />
       </head>
+
       <div className='gallery'>
         <div id='wrapper' className='divided'>
           <div className='container gallery-container'>
@@ -38,14 +45,14 @@ export default function Gallery() {
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <a className='lightbox' href='images/sharadpurnima/1.jpg'>
-                      <img src='images/sharadpurnima/1.jpg' alt='Park' />
+                      <Image src={s1}></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <a className='lightbox' href='images/sharadpurnima/2.jpg'>
-                      <img src='images/sharadpurnima/2.jpg' alt='Park' />
+                      <Image src={s2}></Image>
                     </a>
                   </div>
                 </div>
@@ -53,7 +60,7 @@ export default function Gallery() {
                   <div className='thumbnail'>
                     <div className='thumbnail'>
                       <a className='lightbox' href='images/sharadpurnima/3.jpg'>
-                        <img src='images/sharadpurnima/3.jpg' alt='Park' />
+                        <Image src={s3}></Image>
                       </a>
                     </div>
                   </div>
@@ -61,16 +68,13 @@ export default function Gallery() {
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <a className='lightbox' href='images/sharadpurnima/4.jpg'>
-                      <img src='images/sharadpurnima/4.jpg' alt='Park' />
+                      <Image src={s4}></Image>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <script src='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js'></script>
-          <script>baguetteBox.run(".tz-gallery");</script>
         </div>
       </div>
       <script src='assets/js/jquery.min.js'></script>

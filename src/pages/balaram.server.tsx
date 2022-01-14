@@ -1,7 +1,15 @@
 import React from 'react';
 import styled from 'styled-components';
+import Image from 'next/image';
 
-export default function Gallery() {
+import b1 from '../../public/images/balaram/1.webp';
+import b2 from '../../public/images/balaram/2.webp';
+import b3 from '../../public/images/balaram/3.webp';
+import b4 from '../../public/images/balaram/4.webp';
+import b5 from '../../public/images/balaram/3.webp';
+import b6 from '../../public/images/balaram/4.webp';
+
+export default function Narasimha() {
   const BaguetteBox = require('baguettebox.js');
 
   React.useEffect(() => {
@@ -17,11 +25,6 @@ export default function Gallery() {
           content='width=device-width, initial-scale=1, user-scalable=no'
         />
         <link rel='shortcut icon' href='images/general/iskconlogo.png' />
-        <link rel='stylesheet' href='assets/css/main.css' />
-        <link rel='stylesheet' href='assets/css/menu.css' />
-        <noscript>
-          <link rel='stylesheet' href='assets/css/noscript.css' />
-        </noscript>
 
         <script src='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js'></script>
         <link
@@ -44,55 +47,52 @@ export default function Gallery() {
               <div className='row'>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/balaram/1.jpg'>
-                      <img src='images/balaram/1.webp' alt='Park' />
+                    <a className='lightbox' href='images/balaram/1.webp'>
+                      <Image src={b1} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/balaram/2.jpg'>
-                      <img src='images/balaram/2.webp' alt='Park' />
+                    <a className='lightbox' href='images/balaram/2.webp'>
+                      <Image src={b2} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <div className='thumbnail'>
-                      <a className='lightbox' href='images/balaram/3.jpg'>
-                        <img src='images/balaram/3.webp' alt='Park' />
+                      <a className='lightbox' href='images/balaram/3.webp'>
+                        <Image src={b3} alt=''></Image>
                       </a>
                     </div>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/balaram/4.jpg'>
-                      <img src='images/balaram/4.webp' alt='Park' />
+                    <a className='lightbox' href='images/balaram/4.webp'>
+                      <Image src={b4} alt=''></Image>
                     </a>
                   </div>
                 </div>
 
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/balaram/5.jpg'>
-                      <img src='images/balaram/5.webp' alt='Park' />
+                    <a className='lightbox' href='images/balaram/5.webp'>
+                      <Image src={b5} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
-                    <a className='lightbox' href='images/balaram/6.jpg'>
-                      <img src='images/balaram/6.webp' alt='Park' />
+                    <a className='lightbox' href='images/balaram/6.webp'>
+                      <Image src={b6} alt=''></Image>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <script src='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js'></script>
-          <script>baguetteBox.run(".tz-gallery");</script>
         </div>
       </div>
       <script src='assets/js/jquery.min.js'></script>

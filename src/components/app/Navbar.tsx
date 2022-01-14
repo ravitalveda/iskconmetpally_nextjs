@@ -211,7 +211,6 @@ const NavLink = styled.a`
 
 const Divider = styled.hr`
   width: 100%;
-  background: red;
   height: 1px;
   border: none;
   background: ${(props) => props.theme.colors.black};

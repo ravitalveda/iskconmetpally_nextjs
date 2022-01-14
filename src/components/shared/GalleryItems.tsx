@@ -1,4 +1,15 @@
 import styled from 'styled-components';
+import Image from 'next/image';
+
+import ga1 from '../../../public/images/inside/1.webp';
+import ga2 from '../../../public/images/janmashtami/1.webp';
+import ga3 from '../../../public/images/pushpabhishekam/14.webp';
+import ga4 from '../../../public/images/govardhan/21.jpg';
+import ga5 from '../../../public/images/smallarticle/ratha1.webp';
+import ga6 from '../../../public/images/smallarticle/narasimha.webp';
+import ga7 from '../../../public/images/brahmotsavam/5.jpg';
+import ga8 from '../../../public/images/sharadpurnima/3.jpg';
+import ga9 from '../../../public/images/balaram/5.webp';
 
 interface FeaturesProps {
   complete: boolean;
@@ -12,7 +23,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
 
         <Box>
           <a href='/inside'>
-            <Image src='images/inside/(34).jpg' />
+            <Image src={ga1} alt='' />
           </a>
         </Box>
       </Article>
@@ -21,7 +32,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
 
         <Box>
           <a href='/janmashtami'>
-            <Image src='images/janmashtami/(36).jpg' />
+            <Image src={ga2} alt='' />
           </a>
         </Box>
       </Article>
@@ -30,7 +41,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
 
         <Box>
           <a href='/pushpabhishekam'>
-            <Image src='images/pushpabhishekam/(14).jpg' />
+            <Image src={ga3} alt='' />
           </a>
         </Box>
       </Article>
@@ -39,7 +50,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
 
         <Box>
           <a href='/govardhan'>
-            <Image src='images/govardhan/(27).jpg' />
+            <Image src={ga4} alt='' />
           </a>
         </Box>
       </Article>
@@ -48,7 +59,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
 
         <Box>
           <a href='/rathayatra'>
-            <Image src='images/smallarticle/ratha1.webp' />
+            <Image src={ga5} alt='' />
           </a>
         </Box>
       </Article>
@@ -56,8 +67,8 @@ export default function GalleryItems({ complete }: FeaturesProps) {
         <Title>Sri Narasimha Chaturdashi</Title>
 
         <Box>
-          <a href=''>
-            <Image src='images/smallarticle/narasimha.webp' />
+          <a href='/narasimha'>
+            <Image src={ga6} alt='' />
           </a>
         </Box>
       </Article>
@@ -67,7 +78,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
 
         <Box>
           <a href='/brahmotsavam'>
-            <Image src='images/brahmotsavam/5.jpg' />
+            <Image src={ga7} alt='' />
           </a>
         </Box>
       </Article>
@@ -76,7 +87,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
 
         <Box>
           <a href='/sharadpurnima'>
-            <Image src='images/sharadpurnima/3.jpg' />
+            <Image src={ga8} alt='' />
           </a>
         </Box>
       </Article>
@@ -85,7 +96,7 @@ export default function GalleryItems({ complete }: FeaturesProps) {
 
         <Box>
           <a href='/balaram'>
-            <Image src='images/balaram/5.webp' />
+            <Image src={ga9} alt='' />
           </a>
         </Box>
       </Article>
@@ -139,11 +150,4 @@ const Title = styled.h3`
 
 const Box = styled.div`
   text-align: center;
-  border-radius: 20px;
-`;
-
-const Image = styled.img`
-  max-width: 340px;
-  max-height: 220px;
-  border-radius: 6px;
 `;

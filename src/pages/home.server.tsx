@@ -1,14 +1,21 @@
 import type { NextPage } from 'next';
 import styled from 'styled-components';
 import Head from 'next/head';
-
 import Features from '../components/shared/Features';
-
 import React from 'react';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import ArticleRow from '../components/shared/ArticleRow';
 import Link from 'next/link';
 import { Carousel } from 'react-responsive-carousel';
+import Image from 'next/image';
+
+import border from '../../public/images/general/floral-decor.png';
+import h1 from '../../public/images/slide/homeslide.webp';
+import h2 from '../../public/images/slide/jbsslide.webp';
+import h3 from '../../public/images/slide/1.webp';
+import h4 from '../../public/images/slide/2.webp';
+import h5 from '../../public/images/slide/3.webp';
+import h6 from '../../public/images/slide/ppslide.webp';
 
 const Home: NextPage = () => {
   return (
@@ -21,38 +28,39 @@ const Home: NextPage = () => {
           href='node-modules/react-responsive-carousel/lib/styles/carousel.min.css'
         />
       </Head>
-      <Carousel infiniteLoop autoPlay showThumbs={false}>
+      <Carousel infiniteLoop autoPlay showStatus={false} showThumbs={false}>
         <div>
-          <img src='images/slide/homeslide.webp' alt='' />
-          <p className='legend'>Home</p>
+          <img src={h1.src} alt='' width={'100%'} />
+          <p className='legend'></p>
         </div>
         <div>
-          <img src='images/slide/jbsslide.webp' alt='' />
-          <p className='legend'>khjkhk</p>
+          <img src={h2.src} alt='' width={'100%'} />
+          <p className='legend'>Sri Jagannath Baladev Subhadra Maharni</p>
+        </div>
+
+        <div>
+          <img src={h3.src} alt='' width={'100%'} />
+          <p className='legend'>Sri Sri Radha GovardhanaDhari</p>
         </div>
         <div>
-          <img src='images/slide/ppslide.webp' alt='' />
-          <p className='legend'>Legend 1</p>
+          <img src={h4.src} alt='' width={'100%'} />
+          <p className='legend'>Sri Sri Gaura Nitai</p>
         </div>
         <div>
-          <img src='images/slide/1.webp' alt='' />
-          <p className='legend'>Legend 1</p>
+          <img src={h5.src} alt='' width={'100%'} />
         </div>
+
         <div>
-          <img src='images/slide/2.webp' alt='' />
-          <p className='legend'>Legend 2</p>
-        </div>
-        <div>
-          <img src='images/slide/3.webp' alt='' />
-          <p className='legend'>Legend 3</p>
+          <img src={h6.src} alt='' />
+          <p className='legend'>Srila Prabhupada</p>
         </div>
       </Carousel>
       <br /> <br />
       <div className='title'>Main Festivals</div>
       <div style={{ textAlign: 'center' }}>
-        <img src='images/general/floral-decor.png' alt='donate'></img>
-        <img src='images/general/floral-decor.png' alt='donate'></img>
-        <img src='images/general/floral-decor.png' alt='donate'></img>
+        <img src={border.src} alt='' />
+        <img src={border.src} alt='' />
+        <img src={border.src} alt='' />
         <br />
       </div>
       <Features complete={false} />
@@ -64,7 +72,7 @@ const Home: NextPage = () => {
         donation. Contact details available in our
         <Link href='/contact' passHref>
           Contact
-        </Link>{' '}
+        </Link>
         page.
       </Box>
       <Illustration src='images/general/border.png' alt='border'></Illustration>

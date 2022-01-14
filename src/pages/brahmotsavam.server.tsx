@@ -1,7 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import Image from 'next/image';
 
-export default function Gallery() {
+import br1 from '../../public/images/brahmotsavam/1.jpg';
+import br2 from '../../public/images/brahmotsavam/2.jpg';
+import br3 from '../../public/images/brahmotsavam/3.jpg';
+import br4 from '../../public/images/brahmotsavam/4.jpg';
+import br5 from '../../public/images/brahmotsavam/3.jpg';
+import br6 from '../../public/images/brahmotsavam/4.jpg';
+import br7 from '../../public/images/brahmotsavam/7.jpg';
+
+export default function Brahmotsavam() {
   const BaguetteBox = require('baguettebox.js');
 
   React.useEffect(() => {
@@ -11,18 +20,6 @@ export default function Gallery() {
   return (
     <Container>
       <head>
-        <title>Brahmotsavam</title>
-        <meta
-          name='viewport'
-          content='width=device-width, initial-scale=1, user-scalable=no'
-        />
-        <link rel='shortcut icon' href='images/general/iskconlogo.png' />
-        <link rel='stylesheet' href='assets/css/main.css' />
-        <link rel='stylesheet' href='assets/css/menu.css' />
-        <noscript>
-          <link rel='stylesheet' href='assets/css/noscript.css' />
-        </noscript>
-
         <script src='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js'></script>
         <link
           rel='stylesheet'
@@ -45,14 +42,14 @@ export default function Gallery() {
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <a className='lightbox' href='images/brahmotsavam/1.jpg'>
-                      <img src='images/brahmotsavam/1.jpg' alt='Park' />
+                      <Image src={br1} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <a className='lightbox' href='images/brahmotsavam/2.jpg'>
-                      <img src='images/brahmotsavam/2.jpg' alt='Park' />
+                      <Image src={br2} alt=''></Image>
                     </a>
                   </div>
                 </div>
@@ -60,7 +57,7 @@ export default function Gallery() {
                   <div className='thumbnail'>
                     <div className='thumbnail'>
                       <a className='lightbox' href='images/brahmotsavam/3.jpg'>
-                        <img src='images/brahmotsavam/3.jpg' alt='Park' />
+                        <Image src={br3} alt=''></Image>
                       </a>
                     </div>
                   </div>
@@ -68,44 +65,34 @@ export default function Gallery() {
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <a className='lightbox' href='images/brahmotsavam/4.jpg'>
-                      <img src='images/brahmotsavam/4.jpg' alt='Park' />
+                      <Image src={br4} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <a className='lightbox' href='images/brahmotsavam/5.jpg'>
-                      <img src='images/brahmotsavam/5.jpg' alt='Park' />
+                      <Image src={br5} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <a className='lightbox' href='images/brahmotsavam/6.jpg'>
-                      <img src='images/brahmotsavam/6.jpg' alt='Park' />
+                      <Image src={br6} alt=''></Image>
                     </a>
                   </div>
                 </div>
                 <div className='col-sm-6 col-md-4'>
                   <div className='thumbnail'>
                     <a className='lightbox' href='images/brahmotsavam/7.jpg'>
-                      <img src='images/brahmotsavam/7.jpg' alt='Park' />
-                    </a>
-                  </div>
-                </div>
-                <div className='col-sm-6 col-md-4'>
-                  <div className='thumbnail'>
-                    <a className='lightbox' href='images/brahmotsavam/7.jpg'>
-                      <img src='images/brahmotsavam/7.jpg' alt='Park' />
+                      <Image src={br7} alt=''></Image>
                     </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <script src='https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js'></script>
-          <script>baguetteBox.run(".tz-gallery");</script>
         </div>
       </div>
       <script src='assets/js/jquery.min.js'></script>
